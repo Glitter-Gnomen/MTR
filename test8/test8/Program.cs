@@ -6,7 +6,6 @@ namespace test8
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
 			Console.WriteLine ("Testing Testing!");
 		}
 	}
