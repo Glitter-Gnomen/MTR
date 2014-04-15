@@ -39,6 +39,7 @@
     <Compile Include="Class2.cs" />
     <Compile Include="addition.cs" />
     <Compile Include="subtraction.cs" />
+    <Compile Include="Omregner.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
