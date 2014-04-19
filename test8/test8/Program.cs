@@ -10,7 +10,7 @@ namespace test8
 
 			Console.WriteLine ("Iphone Game");
 
-			Console.WriteLine ("Does it work?")
+            Console.WriteLine("Does it work?");
 		}
 	}
 }
