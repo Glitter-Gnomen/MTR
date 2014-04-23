@@ -9,6 +9,8 @@ namespace test8
 	{
 		public class extension
 		{
+			//Class2 class2 = new Class2();
+			//class2.MenuMads();
 			//Used classes
 			addition add = new addition ();
 			subtraction sub = new subtraction ();
