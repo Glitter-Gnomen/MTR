@@ -86,6 +86,13 @@ namespace test8
 			Console.WriteLine ("The speed: " + mphToKph + " miles per hour is the same as: " + kph + " kilometers per hour!");
 
 		}
+		public static void LengthConverter(){
+			double centimeters;
+			double meters;
+			double kilometers;
+			Console.WriteLine
+
+		}
 
 	}
 }
