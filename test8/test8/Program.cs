@@ -15,6 +15,7 @@ namespace test8
 			addition add = new addition ();
 			subtraction sub = new subtraction ();
 			multiplication mul = new multiplication ();
+			division div = new division ();
 
 			//Variables
 			private static double var1; //Used for input 1
@@ -56,12 +57,19 @@ namespace test8
 					add.adding (calcVar1, var2);
 					break;
 
-					//Subtraction
+				//Subtraction
 				case "-":
 					sub.subbing (calcVar1, var2);
 					break;
+
+				//Multiplication
 				case "*":
 					mul.multiplying (calcVar1, var2);
+					break;
+
+					//Division
+				case "/":
+					div.dividing (calcVar1, var2);
 					break;
 				}
 			}
