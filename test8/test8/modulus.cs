@@ -10,8 +10,8 @@ namespace test8
 
 			Console.WriteLine(input1 % input2);
 			result = input1 % input2;
-			extension ext = new extension();
-			ext.Calcs(result);
+			InversPolishNotation IPN = new InversPolishNotation ();
+			IPN.Calcs(result);
 		}
 	}
 }

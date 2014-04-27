@@ -39,10 +39,14 @@
     <Compile Include="Class2.cs" />
     <Compile Include="addition.cs" />
     <Compile Include="subtraction.cs" />
-    <Compile Include="Omregner.cs" />
     <Compile Include="multiplying.cs" />
     <Compile Include="division.cs" />
     <Compile Include="modulus.cs" />
+    <Compile Include="InversPolishNotation.cs" />
+    <Compile Include="converter.cs" />
+    <Compile Include="Savings.cs" />
+    <Compile Include="BMI.cs" />
+    <Compile Include="dept.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

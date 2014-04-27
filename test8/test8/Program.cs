@@ -1,7 +1,6 @@
-﻿//Invers Polish Notation Calculator by T. L. Hagensen
-//Version 1.0 for use in console
-
-using System;
+﻿using System;
+using System.IO;
+using System.Text;
 
 namespace test8
 {
@@ -9,77 +8,53 @@ namespace test8
 	{
 		public class extension
 		{
-			//Class2 class2 = new Class2();
-			//class2.MenuMads();
+			InversPolishNotation IPN = new InversPolishNotation ();
 
-			//Used classes
-			addition add = new addition ();
-			subtraction sub = new subtraction ();
-			multiplication mul = new multiplication ();
-			division div = new division ();
-			modulus mod = new modulus ();
 
 			//Variables
+			private static string menuVar; //Used to select desired calculator
 			private static double var1; //Used for input 1
-			private static double var2; //Used for input 2
-			private static string var3; //Used to specify the desired calculation operation
 
 
 			//Main method
 			public static void Main (string[] args)
 			{
-				//First input
-				Console.WriteLine ("Input 1 here:");
-				Console.WriteLine ("Enter a number: ");
-				var1 = Convert.ToDouble (Console.ReadLine ());
-
-				extension ext = new extension ();
-				ext.Calcs (var1);
-			}
-
-			//Recursive method to take last input and what to do with the two inputs
-			public void Calcs (double calcVar1)
-			{
-				//Second input
-				Console.WriteLine ("Input 2 here:");
-				Console.WriteLine ("Enter a number: ");
-				var2 = Convert.ToDouble (Console.ReadLine ());
-
-
-				//User picks desired mathematical operation
-				Console.WriteLine ("Select calculation");
-				var3 = (Console.ReadLine ());
-
-
-				//Switch case for the different calculation operations
-				switch (var3) {
-
-				//Addition
-				case "+": 
-					add.adding (calcVar1, var2);
+				//Menu for selectin calculator of choice
+				Console.WriteLine ("Choose your desired calculator:");
+				Console.WriteLine ("Press 1 for an Inverse Polish Notation Calculator");
+				Console.WriteLine ("Press 2 for Savings Calculator");
+				Console.WriteLine ("Press 3 for Dept Calculator");
+				Console.WriteLine ("Press 4 for Measurement Converter");
+				Console.WriteLine ("Press 5 for BMI calculator");
+				menuVar = Convert.ToString (Console.ReadLine ());
+			
+				switch (menuVar) {
+				case "1": //Invers Polish Notation
+					Console.WriteLine ("Input 1 here:");//First input
+					Console.WriteLine ("Enter a number: ");
+					var1 = Convert.ToDouble (Console.ReadLine ());
+					InversPolishNotation IPN = new InversPolishNotation ();
+					IPN.Calcs (var1);
 					break;
 
-				//Subtraction
-				case "-":
-					sub.subbing (calcVar1, var2);
+				case "2": //Savings
+					Class2 save = new Class2 ();
+					save.MenuMads();
 					break;
-
-				//Multiplication
-				case "*":
-					mul.multiplying (calcVar1, var2);
+				case "3": //Dept
+					dept deptInstance = new dept ();
+					deptInstance.Debt ();
 					break;
-
-					//Division
-				case "/":
-					div.dividing (calcVar1, var2);
+				case "4": //Converter
+					converter Con = new converter ();
+					Con.rasmusMenu ();
 					break;
-
-					//Modulus
-				case "%":
-					mod.modulo(calcVar1, var2);
+				case "5": //BMI
+					BMI bmi = new BMI ();
+					bmi.BmiCalc ();
 					break;
+					}
 				}
 			}
 		}
 	}
-}
