@@ -16,6 +16,7 @@ namespace test8
 			subtraction sub = new subtraction ();
 			multiplication mul = new multiplication ();
 			division div = new division ();
+			modulus mod = new modulus ();
 
 			//Variables
 			private static double var1; //Used for input 1
@@ -70,6 +71,11 @@ namespace test8
 					//Division
 				case "/":
 					div.dividing (calcVar1, var2);
+					break;
+
+					//Modulus
+				case "%":
+					mod.modulo(calcVar1, var2);
 					break;
 				}
 			}

@@ -42,6 +42,7 @@
     <Compile Include="Omregner.cs" />
     <Compile Include="multiplying.cs" />
     <Compile Include="division.cs" />
+    <Compile Include="modulus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
