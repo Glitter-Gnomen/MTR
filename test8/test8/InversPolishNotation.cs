@@ -3,18 +3,19 @@
 
 using System;
 
-namespace test8
+namespace calculator
 {
 	public class InversPolishNotation
 	{
+		//Classes used
 		addition add = new addition ();
 		subtraction sub = new subtraction ();
 		multiplication mul = new multiplication ();
 		division div = new division ();
 		modulus mod = new modulus ();
-
-		private static double var2; //Used for input 2
-		private static string var3; //Used to specify the desired calculation operation
+		//Variables
+		private static double var2;//Used for input 2
+		private static string var3;//Used to specify the desired calculation operation
 
 		//Recursive method to take last input and what to do with the two inputs
 		public void Calcs (double calcVar1)
@@ -24,41 +25,33 @@ namespace test8
 			Console.WriteLine ("Enter a number: ");
 			var2 = Convert.ToDouble (Console.ReadLine ());
 
-
 			//User picks desired mathematical operation
 			Console.WriteLine ("Select calculation");
 			var3 = (Console.ReadLine ());
 
-
 			//Switch case for the different calculation operations
 			switch (var3) {
-
 			//Addition
 			case "+": 
 				add.adding (calcVar1, var2);
 				break;
-
-				//Subtraction
+			//Subtraction
 			case "-":
 				sub.subbing (calcVar1, var2);
 				break;
-
-				//Multiplication
+			//Multiplication
 			case "*":
 				mul.multiplying (calcVar1, var2);
 				break;
-
-				//Division
+			//Division
 			case "/":
 				div.dividing (calcVar1, var2);
 				break;
-
-				//Modulus
+			//Modulus
 			case "%":
-				mod.modulo(calcVar1, var2);
+				mod.modulo (calcVar1, var2);
 				break;
 			}
 		}
 	}
 }
-

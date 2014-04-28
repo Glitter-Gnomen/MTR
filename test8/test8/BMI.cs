@@ -1,21 +1,20 @@
 ﻿using System;
 
-namespace test8
+namespace calculator
 {
 	public class BMI
 	{
-		public void BmiCalc (){
+		public void BmiCalc ()
+		{
+			Console.WriteLine ("\nBMI CALCULATOR");
+			Console.WriteLine ("==============");
+			Console.WriteLine ("\nInsert weigth in Kg: ");
 
-			Console.WriteLine("\nBMI CALCULATOR");
-			Console.WriteLine("==============");
-
-			Console.WriteLine("\nInsert weigth in Kg: ");
-
-			int kg = Convert.ToInt32 (Console.ReadLine());
+			int kg = Convert.ToInt32 (Console.ReadLine ());
 
 			Console.WriteLine ("\nInsert heigth in cm: ");
 
-			int m = Convert.ToInt32 (Console.ReadLine());
+			int m = Convert.ToInt32 (Console.ReadLine ());
 
 			double BMI = kg / ((m / 100.0) * (m / 100.0));
 
@@ -38,11 +37,7 @@ namespace test8
 			if (BMI > 30) {
 				Console.WriteLine ("\n30+: Youre so fat your neck looks like a pack of sausages, man");
 			}
-
-
 			//Console.WriteLine ("Your BMI is: " + (weigth/(float)Math.Pow(heigth, 2)));
-
 		}
 	}
 }
-

@@ -1,18 +1,17 @@
 ﻿using System;
 
-namespace test8
+namespace calculator
 {
 	public class Savings : MainClass
 	{
-		public void Saver (){
-
+		public void Saver ()
+		{
 			//Text introducing the program
-
-			Console.WriteLine("\nSAVINGS CALCULATOR");
-			Console.WriteLine("==================");
+			Console.WriteLine ("\nSAVINGS CALCULATOR");
+			Console.WriteLine ("==================");
 
 			//1st instruction
-			Console.WriteLine("\nEnter the amount you would like to deposit: ");
+			Console.WriteLine ("\nEnter the amount you would like to deposit: ");
 
 			//Taking a string input and converts it to int stored in 'save'
 			int save = Convert.ToInt32 (Console.ReadLine ());
@@ -22,7 +21,7 @@ namespace test8
 			}*/
 
 			//2nd instruction
-			Console.WriteLine("\nThank you. Now insert rate in percent (use '.' for dot): ");
+			Console.WriteLine ("\nThank you. Now insert rate in percent (use '.' for dot): ");
 
 			//Again taking an input, converts it to a double as this variable needs to become a decimal number
 			double saveRate = Convert.ToDouble (Console.ReadLine ());
@@ -31,7 +30,7 @@ namespace test8
 			saveRate = saveRate * 0.01;
 
 			//3rd instruction, 3rd storing
-			Console.WriteLine("\nThank you. Now insert number of terms: ");
+			Console.WriteLine ("\nThank you. Now insert number of terms: ");
 			int termNo = Convert.ToInt32 (Console.ReadLine ());
 
 			Console.Clear ();
@@ -67,26 +66,25 @@ namespace test8
 			if (key == "2") {
 				//Whipes the terminal
 				Console.Clear ();
-				Class2 class2 = new Class2 ();
+				savingsMenu class2 = new savingsMenu ();
 				class2.MenuMads ();
 			}
 		}
 
-		public void SavingsMultiple (){
-
+		public void SavingsMultiple ()
+		{
 			//Text introducing the program
-
-			Console.WriteLine("\nSAVINGS CALCULATOR");
-			Console.WriteLine("==================");
+			Console.WriteLine ("\nSAVINGS CALCULATOR");
+			Console.WriteLine ("==================");
 
 			//1st instruction
-			Console.WriteLine("\nWrite the payment you want to continiously deposit: ");
+			Console.WriteLine ("\nWrite the payment you want to continiously deposit: ");
 
 			//Taking a string input and converts it to int stored in 'save'
 			int save_m = Convert.ToInt32 (Console.ReadLine ());
 
 			//2nd instruction
-			Console.WriteLine("\nThank you. Now insert rate in percent (use '.' for dot): ");
+			Console.WriteLine ("\nThank you. Now insert rate in percent (use '.' for dot): ");
 
 			//Again taking an input, converts it to a double as this variable needs to become a decimal number
 			double saveRate_m = Convert.ToDouble (Console.ReadLine ());
@@ -95,7 +93,7 @@ namespace test8
 			saveRate_m = saveRate_m * 0.01;
 
 			//3rd instruction, 3rd storing
-			Console.WriteLine("\nThank you. Now insert number of terms: ");
+			Console.WriteLine ("\nThank you. Now insert number of terms: ");
 			int termNo_m = Convert.ToInt32 (Console.ReadLine ());
 
 			Console.Clear ();
@@ -131,19 +129,16 @@ namespace test8
 			if (key == "1") {
 				SavingsMultiple ();
 			}
-
 			if (key == "2") {
-				Class2 class2 = new Class2 ();
-				class2.MenuMads ();
+				savingsMenu savingsMenuClass = new savingsMenu ();
+				savingsMenuClass.MenuMads ();
 				Console.WriteLine ();
 			}
-
 		}
-
-		public void SavingsTriple (){
+		public void SavingsTriple ()
+		{
 
 
 		}
 	}
 }
-

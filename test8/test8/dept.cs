@@ -1,17 +1,18 @@
 ﻿using System;
 
-namespace test8
+namespace calculator
 {
 	public class dept
 	{
-		public void Debt (){
+		public void Debt ()
+		{
 			//Text introducing the program
 
-			Console.WriteLine("\nDEBT CALCULATOR");
-			Console.WriteLine("===============");
+			Console.WriteLine ("\nDEBT CALCULATOR");
+			Console.WriteLine ("===============");
 
 			//1st instruction
-			Console.WriteLine("\nHow much do you owe? Only whole numbers, please.\n");
+			Console.WriteLine ("\nHow much do you owe? Only whole numbers, please.\n");
 
 			//Taking a string input and converts it to int stored in 'save'
 
@@ -19,7 +20,7 @@ namespace test8
 
 			Console.WriteLine ("\nThank you. What is the rate on the loan in percent?\n");
 
-			double owe_rate = Convert.ToDouble (Console.ReadLine());
+			double owe_rate = Convert.ToDouble (Console.ReadLine ());
 
 			owe_rate = owe_rate * 0.01;
 
@@ -44,14 +45,11 @@ namespace test8
 			if (key == "1") {
 				Debt ();
 			}
-
 			if (key == "2") {
 				Console.Clear ();
-				Class2 class2 = new Class2 ();
+				savingsMenu class2 = new savingsMenu ();
 				class2.MenuMads ();
 			}
-
 		}
 	}
 }
-
