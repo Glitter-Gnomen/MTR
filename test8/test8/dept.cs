@@ -48,7 +48,7 @@ namespace calculator
 			if (key == "2") {
 				Console.Clear ();
 				savingsMenu class2 = new savingsMenu ();
-				class2.MenuMads ();
+				class2.MenuSavings ();
 			}
 		}
 	}

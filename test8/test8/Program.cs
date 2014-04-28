@@ -34,7 +34,7 @@ namespace calculator
 					break;
 				case "2": //Savings
 					savingsMenu save = new savingsMenu ();
-					save.MenuMads ();
+					save.MenuSavings ();
 					break;
 				case "3": //Dept
 					dept deptInstance = new dept ();

@@ -8,7 +8,7 @@ namespace calculator
 	{
 		Savings save = new Savings ();
 
-		public void MenuMads ()
+		public void MenuSavings ()
 		{
 			Console.WriteLine ("Welcome to the CALCULATOR OF SAVINGS!\n\n");
 			Console.WriteLine ("\nWhich option would you like to choose? Write chosen no. and press enter.\n\n1) A single saving, or \n2) Multiple identical savings?\n3) Multiple varying savings");

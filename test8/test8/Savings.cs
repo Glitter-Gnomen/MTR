@@ -67,7 +67,7 @@ namespace calculator
 				//Whipes the terminal
 				Console.Clear ();
 				savingsMenu class2 = new savingsMenu ();
-				class2.MenuMads ();
+				class2.MenuSavings ();
 			}
 		}
 
@@ -131,7 +131,7 @@ namespace calculator
 			}
 			if (key == "2") {
 				savingsMenu savingsMenuClass = new savingsMenu ();
-				savingsMenuClass.MenuMads ();
+				savingsMenuClass.MenuSavings ();
 				Console.WriteLine ();
 			}
 		}
